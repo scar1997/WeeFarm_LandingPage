@@ -21,6 +21,12 @@ html{
   justify-content: center;
 }
 
+.hor_center{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
 .txt_h1{
   font-size: 47px;
   line-height: 69px;
@@ -39,9 +45,16 @@ html{
   font-family: 'Montserrat', sans-serif;
 }
 
-/*padding*/
+/*padding - margin*/
+.pt_100{
+  padding-top: 100px;
+}
 .pb_50{
   padding-bottom: 50px;
+}
+
+.pb_100{
+  padding-bottom: 100px;
 }
 
 .pb_25{
@@ -52,6 +65,9 @@ html{
   margin-left: 20px;
 }
 
+.mb_25{
+  margin-bottom: 25px;
+}
 /*herobanner*/
 .hero_b{
   background-image: url(../img/herob.jpg);
@@ -87,4 +103,22 @@ html{
 .ottieni_txt{
   color: #FFFFFF;
   text-decoration: underline;
+}
+
+/*come funziona section*/
+.section_title_txt{
+  color: #333333;
+}
+
+.pin_point_title{
+  color: #959595;
+  font-weight: 600;
+}
+
+.pin_point_description{
+  color: #959595;
+}
+
+.icon_size{
+  height: 75px;
 }
