@@ -68,6 +68,9 @@ html{
 .mb_25{
   margin-bottom: 25px;
 }
+.mb_150{
+  margin-bottom: 150px;
+}
 /*herobanner*/
 .hero_b{
   background-image: url(../img/herob.jpg);
@@ -122,8 +125,17 @@ html{
 .icon_size{
   height: 75px;
 }
-
+/*perchè scegliere weefarm section*/
 .section2{
     /*background-image: linear-gradient(141deg, #A4FF7F 51%, #7BFFD0 75%);*/
     background-color: #f7f8fa;
+}
+.bold_txt{
+    font-weight: 600;
+}
+.map_size{
+  width: 50%;
+}
+.map_size2{
+  width: 25%;
 }
