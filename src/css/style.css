@@ -68,6 +68,10 @@ html{
 .mb_25{
   margin-bottom: 25px;
 }
+
+.mb_50{
+  margin-bottom: 50px;
+}
 .mb_150{
   margin-bottom: 150px;
 }
@@ -138,4 +142,9 @@ html{
 }
 .map_size2{
   width: 25%;
+}
+
+/*cosa dicono di noi section*/
+.image_radius{
+  border-radius: 5px;
 }
