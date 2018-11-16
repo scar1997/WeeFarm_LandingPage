@@ -85,6 +85,12 @@
         <p class="txt_h3 text-center pin_point_title">RICEVI</p>
         <p class="txt_h3 text-center pin_point_description">Ricevi il raccolto a casa tua,</br>direttamente dal produttore</p>
       </div>
+      <div class="col-md pt_100">
+        <p class=" text-center txt_h3 cta_txt pb_25">OTTIENI SUBITO IL 10% DI SCONTO</p>
+        <div class="sign_button center hor_center" id="go-lead1">
+            <span class="txt_h2 signup_button_txt">OTTIENI</span>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -129,7 +135,7 @@
     <div class="col-md">
       <p class="txt_h2 text-center section_title_txt">Lasciaci i tuoi contatti</p>
       <p class="txt_h3 text-center pin_point_description pb_50">In cambio otterai subito un buono sconto del 10%</p>
-      <div class="sign_button center hor_center" id="go-lead">
+      <div class="sign_button center hor_center">
           <a target="_blank" href="http://eepurl.com/dM-b3A"><span class="txt_h2 signup_button_txt">OTTIENI</span></a>
       </div>
       </div>
@@ -165,6 +171,11 @@
             scrollTop: $("#lead").offset().top
         }, 1300);
     });
+    $("#go-lead1").click(function(){
+      $('html, body').animate({
+          scrollTop: $("#lead").offset().top
+      }, 1300);
+  });
     $("#go-section1").click(function() {
       $('html, body').animate({
           scrollTop: $("#section1").offset().top
