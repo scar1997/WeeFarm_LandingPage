@@ -11,8 +11,13 @@ html{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
+
+ a:hover{
+   text-decoration: none !important;
+ }
+
 /*usefull*/
 .fullh{
   height: 100%;
@@ -52,6 +57,11 @@ a{
 .pt_100{
   padding-top: 100px;
 }
+
+.pt_25{
+    padding-top: 25px;
+}
+
 .pb_50{
   padding-bottom: 50px;
 }
@@ -64,8 +74,8 @@ a{
   padding-bottom: 25px;
 }
 
-.pl_35{
-  margin-left: 20px;
+.pl_70{
+  margin-left: 70px;
 }
 
 .mb_25{
@@ -107,7 +117,7 @@ a{
 }
 .ottieni_button:hover{
   cursor: pointer;
-  background: #EDEDED;
+  opacity: 0.7;
   transition: 1s;
 }
 
@@ -119,6 +129,22 @@ a{
   color: #FFFFFF;
   text-decoration: underline;
 }
+
+.arrow{
+    color: #ffffff;
+    animation: blink 2s ease infinite;
+    font-size: 75px !important;
+  }
+
+.arrow:hover{
+  cursor: pointer;
+}
+
+  @keyframes blink {
+  50% { opacity: 0;
+  }
+  }
+
 
 /*come funziona section*/
 .section_title_txt{
@@ -170,7 +196,7 @@ a{
   border-radius: 500px;
   width: 200px;
   height: 50px;
-  background-image: linear-gradient(141deg, #A4FF7F 51%, #7BFFD0 75%);
+  background-color: #333333;
 }
 
 .sign_button:hover{
@@ -185,4 +211,20 @@ a{
 .sign_button a:hover {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+/*Footer*/
+.section6{
+  background-color: #333333;
+}
+
+.social_icon{
+  cursor: pointer;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.social_icon:hover{
+  opacity: 0.7;
+  transition: 1s;
 }

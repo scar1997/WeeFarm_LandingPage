@@ -6,14 +6,18 @@
   <title>WeeFarm</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale-1"
   <!--css-->
   <link rel="stylesheet" type="text/css" href="src/css/style.css">
   <!--bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <!--googlefont-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
   <!--JQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
@@ -22,7 +26,7 @@
     <div class="container-fluid black_opacity fullh">
       <div class="row fullh">
         <div class="col-md">
-          <div class="col-md-6 fullh center pl_35">
+          <div class="col-md-6 fullh center pl_70">
             <div class="flex container">
             <div class="row pb_50">
               <div class="col-md">
@@ -39,11 +43,16 @@
                 <span class="txt_h3 ottieni_txt">OTTIENI SUBITO IL 10% DI SCONTO</span>
               </div>
             </div>
-            <div class="row">
+            <div class="row pb_25">
               <div class="col-md">
                 <div class="ottieni_button center" id="go-lead">
                     <span class="txt_h2 ottieni_button_txt">OTTIENI</span>
                 </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <i class="material-icons md-48 arrow hor_center"  id="go-section1">keyboard_arrow_down</i>
               </div>
             </div>
           </div>
@@ -54,7 +63,7 @@
   </header>
 
 <!--SECTIION1: COME FUNZIONA-->
-  <div class="container-fluid section1 pb_100 pt_100">
+  <div class="container-fluid section1 pb_100 pt_100" id="section1">
     <div class="row">
       <div class="col-md">
         <p class="txt_h2 text-center section_title_txt pb_100">Come Funziona WeeFarm</p>
@@ -64,7 +73,7 @@
       <div class="col-md-4">
         <img src="src/img/icon/scegli.svg" class="mb_25 icon_size hor_center" alt="">
         <p class="txt_h3 text-center pin_point_title">SCEGLI</p>
-        <p class="txt_h3 text-center pin_point_description">Scegli la qualità di canapa,</br>che preferisci</p>
+        <p class="txt_h3 text-center pin_point_description">Scegli la qualità di canapa</br>che preferisci</p>
       </div>
       <div class="col-md-4">
         <img src="src/img/icon/adotta.svg" class="mb_25 icon_size hor_center" alt="">
@@ -121,21 +130,48 @@
       <p class="txt_h2 text-center section_title_txt">Lasciaci i tuoi contatti</p>
       <p class="txt_h3 text-center pin_point_description pb_50">In cambio otterai subito un buono sconto del 10%</p>
       <div class="sign_button center hor_center" id="go-lead">
-          <a target="_blank" href="http://eepurl.com/dM-b3A"><span class="txt_h2 signup_button_txt">SIGN UP</span></a>
+          <a target="_blank" href="http://eepurl.com/dM-b3A"><span class="txt_h2 signup_button_txt">OTTIENI</span></a>
       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION4: FAQ -->
+<div class="container-fluid section5 pt_100 pb_100">
+  <div class="row">
+    <div class="col-md">
+      <p class="txt_h2 text-center section_title_txt">F.A.Q</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION4: FOOTER -->
+  <div class="container-fluid section6 pt_25 pb_25">
+    <div class="row">
+      <div class="col-md center">
+        <div class="">
+          <a target="_blank" href="https://www.facebook.com/WeeFarm-951046388415249/"><i class="fab fa-facebook-square social_icon"></i></a>
+          <a target="_blank" href="https://www.instagram.com/weefarm/"><i class="fab fa-instagram hor_center social_icon"></i></a>
+        </div>
       </div>
     </div>
   </div>
 
   <script>
   $(document).ready(function(){
-      $("#go-lead").click(function() {
+      $("#go-lead").click(function(){
         $('html, body').animate({
             scrollTop: $("#lead").offset().top
         }, 1300);
     });
-
+    $("#go-section1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#section1").offset().top
+      }, 1300);
   });
+  });
+
 
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
