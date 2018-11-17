@@ -75,7 +75,7 @@ a{
 }
 
 .pl_70{
-  margin-left: 70px;
+  padding-left: 70px !important;
 }
 
 .mb_25{
