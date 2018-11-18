@@ -3,22 +3,13 @@
 <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:url(#SVGID_1_);}
-	.st1{fill:url(#SVGID_2_);}
+	.st0{fill:#333333;}
 </style>
 <g>
 	<g>
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="50" y1="0" x2="50" y2="100">
-			<stop  offset="4.697903e-08" style="stop-color:#A8FF78"/>
-			<stop  offset="1" style="stop-color:#78FFD6"/>
-		</linearGradient>
-		<path class="st0" d="M50,0C22.3,0,0,22.4,0,50s22.3,50,50,50c27.7,0,50-22.4,50-50S77.6,0,50,0z M50,90c-22.1,0-40-17.9-40-40
+		<path class="st0" d="M50,0C22.3,0,0,22.4,0,50s22.3,50,50,50s50-22.4,50-50S77.6,0,50,0z M50,90c-22.1,0-40-17.9-40-40
 			s17.9-40,40-40s40,17.9,40,40S72.1,90,50,90z"/>
 	</g>
-	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="60.0319" y1="25.063" x2="60.0319" y2="70.75">
-		<stop  offset="4.697903e-08" style="stop-color:#A8FF78"/>
-		<stop  offset="1" style="stop-color:#78FFD6"/>
-	</linearGradient>
-	<path class="st1" d="M55.1,25.1h-10V55l26.2,15.8l3.8-6.2L55.1,51.3V25.1z"/>
+	<path class="st0" d="M55.1,25.1h-10V55l26.2,15.8l3.8-6.2l-20-13.3V25.1z"/>
 </g>
 </svg>
