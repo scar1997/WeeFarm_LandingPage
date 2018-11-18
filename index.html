@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--css-->
   <link rel="stylesheet" type="text/css" href="src/css/style.css">
+  <!--media query-->
+  <link rel="stylesheet" type="text/css" href="src/css/media_query.css">
   <!--bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <!--googlefont-->
@@ -18,7 +20,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!--Fontawesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <!--Mailchimp-->
+  <!--Mailchimp
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>-->
 </head>
 
 <body>
@@ -27,33 +35,33 @@
     <div class="container-fluid black_opacity fullh">
       <div class="row fullh">
         <div class="col-md">
-          <div class="col-md-6 fullh center pl_70">
+          <div class="row">
+            <div class="col-md-12 arrow_aligne">
+              <i class="material-icons md-48 arrow hor_center"  id="go-section1">keyboard_arrow_down</i>
+            </div>
+          </div>
+          <div class="col-md-6 fullh center pl_70 col-sm-12">
             <div class="flex container">
             <div class="row pb_50">
               <div class="col-md">
-                <img src="src/img/logo.svg" class=" logo_img" alt="">
+                <img src="src/img/logo.svg" class="responsive_hor_center logo_img" alt="">
               </div>
             </div>
             <div class="row  pb_50">
               <div class="col-md">
-                  <span class="txt_h1 hero_b_txt">Adotta la tua pianta,</br>dai nostri campi a casa tua</span>
+                  <p class="txt_h1 hero_b_txt">Adotta la tua pianta,</br>dai nostri campi a casa tua</p>
               </div>
             </div>
             <div class="row  pb_25">
               <div class="col-md">
-                <span class="txt_h3 ottieni_txt">OTTIENI SUBITO IL 10% DI SCONTO</span>
+                <p class="txt_h3 ottieni_txt responsive_text_center">OTTIENI SUBITO IL 10% DI SCONTO</p>
               </div>
             </div>
             <div class="row pb_25">
               <div class="col-md">
-                <div class="ottieni_button center" id="go-lead">
+                <div class="responsive_hor_center ottieni_button center" id="go-lead">
                     <span class="txt_h2 ottieni_button_txt">OTTIENI</span>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <i class="material-icons md-48 arrow hor_center"  id="go-section1">keyboard_arrow_down</i>
               </div>
             </div>
           </div>
@@ -68,20 +76,28 @@
     <div class="row">
       <div class="col-md">
         <p class="txt_h2 text-center section_title_txt pb_100">Come Funziona WeeFarm</p>
+          <img src="src/img/maps/funzionamento.svg" class="funzionamento img-fluid hor_center" alt="">
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
+    <div class="col-md pt_100">
+      <p class=" text-center txt_h3 cta_txt pb_25">OTTIENI SUBITO IL 10% DI SCONTO</p>
+      <div class="sign_button center hor_center" id="go-lead1">
+          <span class="txt_h2 signup_button_txt">OTTIENI</span>
+      </div>
+    </div>
+  </div>
+    <!--<div class="row">
+      <div class="col-md-4 pb_50_r">
         <img src="src/img/icon/scegli.svg" class="mb_25 icon_size hor_center" alt="">
         <p class="txt_h3 text-center pin_point_title">SCEGLI</p>
         <p class="txt_h3 text-center pin_point_description">Scegli la qualità di canapa</br>che preferisci</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 pb_50_r">
         <img src="src/img/icon/adotta.svg" class="mb_25 icon_size hor_center" alt="">
         <p class="txt_h3 text-center pin_point_title">ADOTTA</p>
         <p class="txt_h3 text-center pin_point_description">Adotta la tua piantina</br>e aspetta che fiorisca</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 pb_50_r">
         <img src="src/img/icon/ricevi.svg" class="mb_25 icon_size hor_center" alt="">
         <p class="txt_h3 text-center pin_point_title">RICEVI</p>
         <p class="txt_h3 text-center pin_point_description">Ricevi il raccolto a casa tua,</br>direttamente dal produttore</p>
@@ -93,10 +109,33 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
 <!--SECTION2: PERCHE' SCEGLIERE WEEFARM-->
-  <div class="container-fluid section2 pt_100 pb_100">
+<div class="container-fluid section2 pb_100 pt_100" id="section1">
+  <div class="row">
+    <div class="col-md">
+      <p class="txt_h2 text-center section_title_txt pb_100">Perchè scegliere WeeFarm</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 pb_50_r">
+      <img src="src/img/icon/scegli.svg" class="mb_25 icon_size hor_center" alt="">
+      <p class="txt_h3 text-center pin_point_title">RISPARMIO</p>
+      <p class="txt_h3 text-center pin_point_description">Prezzi inferiori, fino al 50%</br>rispetto alla concorrenza</p>
+    </div>
+    <div class="col-md-4 pb_50_r">
+      <img src="src/img/icon/adotta.svg" class="mb_25 icon_size hor_center" alt="">
+      <p class="txt_h3 text-center pin_point_title">QUALITA'</p>
+      <p class="txt_h3 text-center pin_point_description">Acquista solo dai migliori</br>coltivatori</p>
+    </div>
+    <div class="col-md-4 pb_50_r">
+      <img src="src/img/icon/ricevi.svg" class="mb_25 icon_size hor_center" alt="">
+      <p class="txt_h3 text-center pin_point_title">TRACCIABILITA'</p>
+      <p class="txt_h3 text-center pin_point_description">Conosci la provenienza del</br>prodotto che acquisti</p>
+    </div>
+  </div>
+<!--  <div class="container-fluid section2 pt_100 pb_100">
       <div class="col-md">
         <p class="txt_h2 text-center section_title_txt pb_100">Perchè scegliere WeeFarm</p>
         <p class="txt_h3 text-center section_title_txt pb_25">Come lo facevi <span class="bold_txt">IERI</span></p>
@@ -105,10 +144,10 @@
         <img src="src/img/maps/mappa_oggi.svg" class="map_size2 hor_center" alt="">
       </div>
     </div>
-  </div>
+  </div>-->
 
 <!--SECTION3: COSA DICONO DI NOI-->
-  <div class="container-fluid section3 pt_100 pb_100">
+  <!--<div class="container-fluid section3 pt_100 pb_100">
     <div class="row">
       <div class="col-md">
         <p class="txt_h2 text-center section_title_txt pb_100">Cosa dicono di noi</p>
@@ -116,7 +155,7 @@
         <img src="src/img/facebook.jpg" class="map_size image_radius hor_center img-fluid mb_50" alt="">
         <img src="src/img/facebook.jpg" class="map_size image_radius hor_center img-fluid mb_50" alt="">
       </div>
-    </div>
+    </div>-->
       <!--<div class="row">
         <div class="col-md-4">
           <img src="src/img/facebook.jpg" class="image_radius hor_center img-fluid" alt="">
@@ -127,8 +166,8 @@
         <div class="col-md-4">
           <img src="src/img/facebook.jpg" class="image_radius hor_center img-fluid" alt="">
       </div>
-    </div>-->
-  </div>
+    </div>
+  </div>-->
 
 <!-- SECTION4: LEAD -->
 <div class="container-fluid section4 pt_100 pb_100" id="lead">
@@ -137,26 +176,20 @@
       <p class="txt_h2 text-center section_title_txt">Lasciaci i tuoi contatti</p>
       <p class="txt_h3 text-center pin_point_description pb_50">In cambio otterai subito un buono sconto del 10%</p>
       <!-- Begin Mailchimp Signup Form -->
-      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-      <style type="text/css">
-      	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-      	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-      	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-      </style>
       <div id="mc_embed_signup">
       <form action="https://weefarm.us19.list-manage.com/subscribe/post?u=73365d327e79f61405c4b55f7&amp;id=e1cd4ea59c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
       	<h2>Subscribe to our mailing list</h2>
       <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
       <div class="mc-field-group">
-      	<label for="mce-EMAIL">Lascia la tua migliore e-mail  <span class="asterisk">*</span>
-      </label>
-      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-      </div>
-      <div class="mc-field-group">
       	<label for="mce-FNAME">Il tuo nome  <span class="asterisk">*</span>
       </label>
       	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+      </div>
+      <div class="mc-field-group">
+      	<label for="mce-EMAIL">Lascia la tua migliore e-mail  <span class="asterisk">*</span>
+      </label>
+      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
       </div>
       	<div id="mce-responses" class="clear">
       		<div class="response" id="mce-error-response" style="display:none"></div>
@@ -167,21 +200,20 @@
           </div>
       </form>
       </div>
-
-      <!--End mc_embed_signup-->
+  <!--End mc_embed_signup-->
       </div>
     </div>
   </div>
 </div>
 
-<!-- SECTION4: FAQ -->
+<!-- SECTION4: FAQ
 <div class="container-fluid section5 pt_100 pb_100">
   <div class="row">
     <div class="col-md">
-      <p class="txt_h2 text-center section_title_txt">F.A.Q</p>
+      <p class="txt_h2 text-center section_title_txt">Un gr. a soli 2,74€</p>
     </div>
   </div>
-</div>
+</div>-->
 
 <!-- SECTION4: FOOTER -->
 <!--  <div class="container-fluid section6 pt_25 pb_25">

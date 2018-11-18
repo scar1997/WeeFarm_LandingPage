@@ -18,6 +18,10 @@ a{
    text-decoration: none !important;
  }
 
+ p{
+   margin: 0 0 0 0 !important;
+ }
+
 /*usefull*/
 .fullh{
   height: 100%;
@@ -127,7 +131,7 @@ a{
 
 .ottieni_txt{
   color: #FFFFFF;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .arrow{
@@ -145,7 +149,10 @@ a{
   }
   }
 
-
+.arrow_aligne{
+  position: absolute !important;
+  top: 90%;
+}
 /*come funziona section*/
 .section_title_txt{
   color: #333333;
@@ -165,7 +172,7 @@ a{
 }
 .cta_txt{
   color: #333333;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 /*perchè scegliere weefarm section*/
 .section2{
@@ -185,6 +192,9 @@ a{
   width: 25%;
 }
 
+.funzionamento{
+  width: 80%;
+}
 /*cosa dicono di noi section*/
 .image_radius{
   border-radius: 5px;
@@ -200,7 +210,7 @@ a{
   border-radius: 500px;
   width: 200px;
   height: 50px;
-  background-color: #333333;
+  background-color: #A6FF7B;
 }
 
 .sign_button:hover{

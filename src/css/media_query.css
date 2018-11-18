@@ -1,0 +1,44 @@
+@media (min-width: 1800px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.hero_b_txt{
+		font-size: 29px;
+		line-height: 37px;
+		font-weight: 600;
+	}
+
+	.pl_70{
+		padding-left: 15px !important;
+	}
+
+	.responsive_hor_center{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	}
+
+	.responsive_text_center{
+		text-align: center!important;
+	}
+
+	.pb_50_r{
+		padding-bottom: 50px;
+	}
+}
