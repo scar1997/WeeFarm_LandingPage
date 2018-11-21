@@ -12,7 +12,45 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+	.hero_b_txt{
+		font-size: 29px;
+		line-height: 37px;
+		font-weight: 600;
+	}
 
+	.pl_70{
+		padding-left: 15px !important;
+	}
+
+	.responsive_hor_center{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	}
+
+	.responsive_text_center{
+		text-align: center!important;
+	}
+
+	.pb_50_r{
+		padding-bottom: 50px;
+	}
+
+	.funzionamento {
+		width: 100%;
+	}
+	#mc_embed_signup_scroll{
+		width: 75%;
+	}
+
+	.responsive_text_center{
+				text-align: center!important;
+	}
+
+	.pb_25_r{
+		padding-bottom: 25px !important;
+	}
 }
 
 /* Portrait phones and smaller */
@@ -51,5 +89,9 @@
 
 	.responsive_text_center{
 		    text-align: center!important;
+	}
+
+	.pb_25_r{
+		padding-bottom: 25px !important;
 	}
 }

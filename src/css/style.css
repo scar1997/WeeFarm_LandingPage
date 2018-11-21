@@ -24,7 +24,7 @@ a{
 
 /*usefull*/
 .fullh{
-  height: 100%;
+  height: 100% !important;
 }
 
 .center{
@@ -161,8 +161,8 @@ a{
 }
 
 .color_black{
-  color: #333333 !important;
-  opacity: 0.8;
+  color: #FFFFFF !important;
+  font-weight: 500;
 }
 /*come funziona section*/
 .section_title_txt{
@@ -176,11 +176,11 @@ a{
 }
 
 .pin_point_description{
-  color: #959595;
+  color: #333333;
 }
 
 .icon_size{
-  height: 75px;
+  height: 100px;
 }
 .cta_txt{
   color: #333333;
@@ -188,9 +188,8 @@ a{
 }
 /*perchè scegliere weefarm section*/
 .section2{
-    background-image: linear-gradient(to right bottom, #a4ff7f, #94ff96, #87ffac, #7effbf, #7bffd0);
-    /*background-color: #f7f8fa;*/
-    opacity: 0.8;
+    /*background-image: linear-gradient(to right bottom, #7bffd0, #7effbf, #87ffac, #94ff96, #a4ff7f);*/
+    background-color: #3fc380;
 }
 
 .bold_txt{
@@ -213,17 +212,12 @@ a{
   border-radius: 5px;
 }
 
-/*lead section*/
-.section4{
-    /*background-image: linear-gradient(141deg, #A4FF7F 51%, #7BFFD0 75%);*/
-    background-color: #ffffff;
-}
 
 .sign_button{
-  border-radius: 500px;
-  width: 200px;
-  height: 50px;
-  background-color: #3fc380;
+  border-radius: 500px !important;
+  width: 200px !important;
+  height: 50px !important;
+  background-color: #3fc380 !important;
 }
 
 .sign_button:hover{
@@ -248,8 +242,37 @@ a{
 #mc_embed_signup .mc-field-group{
   padding-bottom: 25px!important;
 }
-/*FAQ*/
 
+#mc_embed_signup .button{
+  border-radius: 500px !important;
+  width: 200px !important;
+  height: 50px !important;
+  background-color: #3fc380 !important;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600 !important;
+
+}
+
+#mc_embed_signup .button:hover{
+  opacity: 0.7 !important;
+  transition: 1s !important;
+  cursor: pointer !important;
+}
+
+#mc_embed_signup .mc-field-group input {
+  border-radius: 500px !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.clear{
+  padding-top: 25px !important;
+}
+/*FAQ*/
+.section4{
+  background-color: #f7f8fa !important;
+}
 
 /*Footer*/
 .section6{
@@ -265,4 +288,17 @@ a{
 .social_icon:hover{
   opacity: 0.7;
   transition: 1s;
+}
+
+/* Thank you 1*/
+.ottieni_button_ty_v{
+  background-color: #3fc380 !important;
+}
+
+.ottieni_button_ty_r{
+  background-color: #E94B5F !important;
+}
+
+.white{
+  color: #FFFFFF;
 }
